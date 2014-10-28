@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated usageevolution -->
+      <package
+            uri="http://usageevolution/1.0"
+            class="org.scaledl.usageevolution.UsageevolutionPackage"
+            genModel="model/usageevolution.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated usageevolution -->
+      <parser
+            type="usageevolution"
+            class="org.scaledl.usageevolution.util.UsageevolutionResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

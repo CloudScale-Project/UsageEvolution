@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated usageevolution -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.scaledl.usageevolution.presentation.UsageevolutionModelWizardID"
+            name="%_UI_UsageevolutionModelWizard_label"
+            class="org.scaledl.usageevolution.presentation.UsageevolutionModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UsageevolutionModelFile.gif">
+         <description>%_UI_UsageevolutionModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated usageevolution -->
+      <editor
+            id="org.scaledl.usageevolution.presentation.UsageevolutionEditorID"
+            name="%_UI_UsageevolutionEditor_label"
+            icon="icons/full/obj16/UsageevolutionModelFile.gif"
+            extensions="usageevolution"
+            class="org.scaledl.usageevolution.presentation.UsageevolutionEditor"
+            contributorClass="org.scaledl.usageevolution.presentation.UsageevolutionActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
