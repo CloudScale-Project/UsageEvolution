@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.scaledl.usageevolution.buckminster"
+      label="ScleDL Usage Evolution"
+      version="1.0.0.qualifier"
+      provider-name="scaledl.org">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <url>
+      <discovery label="Limbo" url="http://se2.informatik.uni-wuerzburg.de/eclipse/limbo/"/>
+      <discovery label="Eclipse Luna" url="http://download.eclipse.org/releases/luna/"/>
+      <discovery label="Palladio Commons" url="http://sdqweb.ipd.kit.edu/eclipse/commons/nightly/"/>
+      <discovery label="Palladio Third Party Wrapper" url="http://sdqweb.ipd.kit.edu/eclipse/thirdpartywrapper/nightly/"/>
+      <discovery label="Palladio" url="http://sdqweb.ipd.kit.edu/eclipse/palladio/nightly/"/>
+      <discovery label="Orbit Update Site" url="http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/"/>
+   </url>
+
+   <includes
+         id="org.scaledl.usageevolution.feature"
+         version="0.0.0"/>
+
+</feature>
