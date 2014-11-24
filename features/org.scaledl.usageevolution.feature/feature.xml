@@ -246,8 +246,15 @@ limitations under the License.
    </license>
 
    <requires>
+      <import plugin="org.eclipse.core.runtime" version="3.10.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.ecore" version="2.10.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.ecore.xmi" version="2.10.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.identifier" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.pcm" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.probfunction" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.stoex" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.units" version="2.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.edit"/>
-      <import plugin="dlim.generator.edit"/>
       <import plugin="de.uka.ipd.sdq.identifier.edit"/>
       <import plugin="de.uka.ipd.sdq.pcm.edit"/>
       <import plugin="de.uka.ipd.sdq.probfunction.edit"/>
@@ -256,15 +263,9 @@ limitations under the License.
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.emf.edit.ui"/>
       <import plugin="org.eclipse.ui.ide"/>
-      <import plugin="org.eclipse.core.runtime" version="3.10.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.emf.ecore" version="2.10.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.emf.ecore.xmi" version="2.10.0" match="greaterOrEqual"/>
-      <import plugin="dlim.generator" version="0.14.6" match="greaterOrEqual"/>
-      <import plugin="de.uka.ipd.sdq.identifier" version="2.1.0" match="greaterOrEqual"/>
-      <import plugin="de.uka.ipd.sdq.pcm" version="3.6.0" match="greaterOrEqual"/>
-      <import plugin="de.uka.ipd.sdq.probfunction" version="2.1.0" match="greaterOrEqual"/>
-      <import plugin="de.uka.ipd.sdq.stoex" version="2.2.0" match="greaterOrEqual"/>
-      <import plugin="de.uka.ipd.sdq.units" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="tools.descartes.dlim.generator" version="0.14.10" match="greaterOrEqual"/>
+      <import plugin="tools.descartes.dlim.generator.edit" version="0.14.10" match="greaterOrEqual"/>
+      <import plugin="tools.descartes.dlim.generator.editor" version="0.14.10" match="greaterOrEqual"/>
    </requires>
 
    <plugin
