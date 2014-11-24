@@ -22,3 +22,4 @@ Require-Bundle: org.eclipse.core.runtime,
  de.uka.ipd.sdq.units.edit;visibility:=reexport,
  tools.descartes.dlim.generator.edit;bundle-version="0.14.10"
 Bundle-ActivationPolicy: lazy
+Import-Package: org.scaledl.usageevolution.provider
