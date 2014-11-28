@@ -16,9 +16,9 @@ import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario;
  * <p>
  * The following features are supported:
  * <ul>
- * <li>{@link org.scaledl.usageevolution.Usage#getLoadEvolution <em>Load Evolution</em>}</li>
- * <li>{@link org.scaledl.usageevolution.Usage#getWorkEvolutions <em>Work Evolutions</em>}</li>
- * <li>{@link org.scaledl.usageevolution.Usage#getScenario <em>Scenario</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.Usage#getLoadEvolution <em>Load Evolution</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.Usage#getWorkEvolutions <em>Work Evolutions</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.Usage#getScenario <em>Scenario</em>}</li>
  * </ul>
  * </p>
  *
@@ -28,13 +28,13 @@ import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario;
  */
 public interface Usage extends EObject, Entity {
     /**
-     * Returns the value of the '<em><b>Load Evolution</b></em>' reference. <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Load Evolution</b></em>' reference.
+     * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Load Evolution</em>' reference isn't clear, there really should be
      * more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Load Evolution</em>' reference.
      * @see #setLoadEvolution(Sequence)
      * @see org.scaledl.usageevolution.UsageevolutionPackage#getUsage_LoadEvolution()
@@ -44,11 +44,9 @@ public interface Usage extends EObject, Entity {
     Sequence getLoadEvolution();
 
     /**
-     * Sets the value of the '{@link org.scaledl.usageevolution.Usage#getLoadEvolution
-     * <em>Load Evolution</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Load Evolution</em>' reference.
+     * Sets the value of the '{@link org.scaledl.usageevolution.Usage#getLoadEvolution <em>Load Evolution</em>}' reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @param value the new value of the '<em>Load Evolution</em>' reference.
      * @see #getLoadEvolution()
      * @generated
      */
@@ -72,13 +70,13 @@ public interface Usage extends EObject, Entity {
     EList<WorkParameterEvolution> getWorkEvolutions();
 
     /**
-     * Returns the value of the '<em><b>Scenario</b></em>' reference. <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Scenario</b></em>' reference.
+     * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Scenario</em>' reference isn't clear, there really should be more
      * of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Scenario</em>' reference.
      * @see #setScenario(UsageScenario)
      * @see org.scaledl.usageevolution.UsageevolutionPackage#getUsage_Scenario()
@@ -88,11 +86,9 @@ public interface Usage extends EObject, Entity {
     UsageScenario getScenario();
 
     /**
-     * Sets the value of the '{@link org.scaledl.usageevolution.Usage#getScenario <em>Scenario</em>}
-     * ' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Scenario</em>' reference.
+     * Sets the value of the '{@link org.scaledl.usageevolution.Usage#getScenario <em>Scenario</em>}' reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @param value the new value of the '<em>Scenario</em>' reference.
      * @see #getScenario()
      * @generated
      */

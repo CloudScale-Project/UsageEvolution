@@ -18,10 +18,8 @@ import tools.descartes.dlim.Sequence;
  * <p>
  * The following features are implemented:
  * <ul>
- * <li>{@link org.scaledl.usageevolution.impl.WorkParameterEvolutionImpl#getEvolution <em>Evolution
- * </em>}</li>
- * <li>{@link org.scaledl.usageevolution.impl.WorkParameterEvolutionImpl#getParameterName <em>
- * Parameter Name</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.impl.WorkParameterEvolutionImpl#getEvolution <em>Evolution</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.impl.WorkParameterEvolutionImpl#getParameterName <em>Parameter Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -41,7 +39,6 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
     /**
      * The default value of the '{@link #getParameterName() <em>Parameter Name</em>}' attribute.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @see #getParameterName()
      * @generated
      * @ordered
@@ -60,7 +57,6 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     protected WorkParameterEvolutionImpl() {
@@ -69,7 +65,6 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -79,18 +74,16 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public Sequence getEvolution() {
         if (evolution != null && evolution.eIsProxy()) {
-            InternalEObject oldEvolution = (InternalEObject) evolution;
-            evolution = (Sequence) eResolveProxy(oldEvolution);
+            InternalEObject oldEvolution = (InternalEObject)evolution;
+            evolution = (Sequence)eResolveProxy(oldEvolution);
             if (evolution != oldEvolution) {
                 if (eNotificationRequired())
-                    eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-                            UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION, oldEvolution, evolution));
+                    eNotify(new ENotificationImpl(this, Notification.RESOLVE, UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION, oldEvolution, evolution));
             }
         }
         return evolution;
@@ -98,7 +91,6 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     public Sequence basicGetEvolution() {
@@ -107,7 +99,6 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -115,13 +106,11 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
         Sequence oldEvolution = evolution;
         evolution = newEvolution;
         if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET,
-                    UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION, oldEvolution, evolution));
+            eNotify(new ENotificationImpl(this, Notification.SET, UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION, oldEvolution, evolution));
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -131,7 +120,6 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -139,90 +127,81 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
         String oldParameterName = parameterName;
         parameterName = newParameterName;
         if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET,
-                    UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME, oldParameterName, parameterName));
+            eNotify(new ENotificationImpl(this, Notification.SET, UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME, oldParameterName, parameterName));
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
         switch (featureID) {
-        case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
-            if (resolve)
-                return getEvolution();
-            return basicGetEvolution();
-        case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
-            return getParameterName();
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
+                if (resolve) return getEvolution();
+                return basicGetEvolution();
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
+                return getParameterName();
         }
         return super.eGet(featureID, resolve, coreType);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public void eSet(int featureID, Object newValue) {
         switch (featureID) {
-        case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
-            setEvolution((Sequence) newValue);
-            return;
-        case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
-            setParameterName((String) newValue);
-            return;
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
+                setEvolution((Sequence)newValue);
+                return;
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
+                setParameterName((String)newValue);
+                return;
         }
         super.eSet(featureID, newValue);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public void eUnset(int featureID) {
         switch (featureID) {
-        case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
-            setEvolution((Sequence) null);
-            return;
-        case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
-            setParameterName(PARAMETER_NAME_EDEFAULT);
-            return;
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
+                setEvolution((Sequence)null);
+                return;
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
+                setParameterName(PARAMETER_NAME_EDEFAULT);
+                return;
         }
         super.eUnset(featureID);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public boolean eIsSet(int featureID) {
         switch (featureID) {
-        case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
-            return evolution != null;
-        case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
-            return PARAMETER_NAME_EDEFAULT == null ? parameterName != null : !PARAMETER_NAME_EDEFAULT
-                    .equals(parameterName);
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
+                return evolution != null;
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
+                return PARAMETER_NAME_EDEFAULT == null ? parameterName != null : !PARAMETER_NAME_EDEFAULT.equals(parameterName);
         }
         return super.eIsSet(featureID);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public String toString() {
-        if (eIsProxy())
-            return super.toString();
+        if (eIsProxy()) return super.toString();
 
         StringBuffer result = new StringBuffer(super.toString());
         result.append(" (parameterName: ");

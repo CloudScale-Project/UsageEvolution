@@ -20,40 +20,36 @@ import de.uka.ipd.sdq.pcm.usagemodel.UsagemodelPackage;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!-- end-user-doc -->
- * 
  * @generated
  */
 public class UsageevolutionPackageImpl extends EPackageImpl implements UsageevolutionPackage {
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     private EClass usageEvolutionEClass = null;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     private EClass usageEClass = null;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     private EClass workParameterEvolutionEClass = null;
 
     /**
      * Creates an instance of the model <b>Package</b>, registered with
-     * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package package URI
-     * value.
-     * <p>
-     * Note: the correct way to create the package is via the static factory method {@link #init
-     * init()}, which also performs initialization of the package, or returns the registered
-     * package, if one already exists. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+     * package URI value.
+     * <p>Note: the correct way to create the package is via the static
+     * factory method {@link #init init()}, which also performs
+     * initialization of the package, or returns the registered package,
+     * if one already exists.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @see org.eclipse.emf.ecore.EPackage.Registry
      * @see org.scaledl.usageevolution.UsageevolutionPackage#eNS_URI
      * @see #init()
@@ -65,33 +61,26 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     private static boolean isInited = false;
 
     /**
-     * Creates, registers, and initializes the <b>Package</b> for this model, and for any others
-     * upon which it depends.
+     * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
      * 
-     * <p>
-     * This method is used to initialize {@link UsageevolutionPackage#eINSTANCE} when that field is
-     * accessed. Clients should not invoke it directly. Instead, they should simply access that
-     * field to obtain the package. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * <p>This method is used to initialize {@link UsageevolutionPackage#eINSTANCE} when that field is accessed.
+     * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @see #eNS_URI
      * @see #createPackageContents()
      * @see #initializePackageContents()
      * @generated
      */
     public static UsageevolutionPackage init() {
-        if (isInited)
-            return (UsageevolutionPackage) EPackage.Registry.INSTANCE.getEPackage(UsageevolutionPackage.eNS_URI);
+        if (isInited) return (UsageevolutionPackage)EPackage.Registry.INSTANCE.getEPackage(UsageevolutionPackage.eNS_URI);
 
         // Obtain or create and register package
-        UsageevolutionPackageImpl theUsageevolutionPackage = (UsageevolutionPackageImpl) (EPackage.Registry.INSTANCE
-                .get(eNS_URI) instanceof UsageevolutionPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
-                : new UsageevolutionPackageImpl());
+        UsageevolutionPackageImpl theUsageevolutionPackage = (UsageevolutionPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof UsageevolutionPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new UsageevolutionPackageImpl());
 
         isInited = true;
 
@@ -108,6 +97,7 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
         // Mark meta-data to indicate it can't be changed
         theUsageevolutionPackage.freeze();
 
+  
         // Update the registry and return the package
         EPackage.Registry.INSTANCE.put(UsageevolutionPackage.eNS_URI, theUsageevolutionPackage);
         return theUsageevolutionPackage;
@@ -115,7 +105,6 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -125,17 +114,15 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EReference getUsageEvolution_Usages() {
-        return (EReference) usageEvolutionEClass.getEStructuralFeatures().get(0);
+        return (EReference)usageEvolutionEClass.getEStructuralFeatures().get(0);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -145,37 +132,33 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EReference getUsage_LoadEvolution() {
-        return (EReference) usageEClass.getEStructuralFeatures().get(0);
+        return (EReference)usageEClass.getEStructuralFeatures().get(0);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EReference getUsage_WorkEvolutions() {
-        return (EReference) usageEClass.getEStructuralFeatures().get(1);
+        return (EReference)usageEClass.getEStructuralFeatures().get(1);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EReference getUsage_Scenario() {
-        return (EReference) usageEClass.getEStructuralFeatures().get(2);
+        return (EReference)usageEClass.getEStructuralFeatures().get(2);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -185,50 +168,45 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EReference getWorkParameterEvolution_Evolution() {
-        return (EReference) workParameterEvolutionEClass.getEStructuralFeatures().get(0);
+        return (EReference)workParameterEvolutionEClass.getEStructuralFeatures().get(0);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EAttribute getWorkParameterEvolution_ParameterName() {
-        return (EAttribute) workParameterEvolutionEClass.getEStructuralFeatures().get(1);
+        return (EAttribute)workParameterEvolutionEClass.getEStructuralFeatures().get(1);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public UsageevolutionFactory getUsageevolutionFactory() {
-        return (UsageevolutionFactory) getEFactoryInstance();
+        return (UsageevolutionFactory)getEFactoryInstance();
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     private boolean isCreated = false;
 
     /**
-     * Creates the meta-model objects for the package. This method is guarded to have no affect on
-     * any invocation but its first. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * Creates the meta-model objects for the package.  This method is
+     * guarded to have no affect on any invocation but its first.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
     public void createPackageContents() {
-        if (isCreated)
-            return;
+        if (isCreated) return;
         isCreated = true;
 
         // Create classes and their features
@@ -247,20 +225,18 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     private boolean isInitialized = false;
 
     /**
-     * Complete the initialization of the package and its meta-model. This method is guarded to have
-     * no affect on any invocation but its first. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * Complete the initialization of the package and its meta-model.  This
+     * method is guarded to have no affect on any invocation but its first.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
     public void initializePackageContents() {
-        if (isInitialized)
-            return;
+        if (isInitialized) return;
         isInitialized = true;
 
         // Initialize package
@@ -269,10 +245,9 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
         setNsURI(eNS_URI);
 
         // Obtain other dependent packages
-        EntityPackage theEntityPackage = (EntityPackage) EPackage.Registry.INSTANCE.getEPackage(EntityPackage.eNS_URI);
-        DlimPackage theDlimPackage = (DlimPackage) EPackage.Registry.INSTANCE.getEPackage(DlimPackage.eNS_URI);
-        UsagemodelPackage theUsagemodelPackage = (UsagemodelPackage) EPackage.Registry.INSTANCE
-                .getEPackage(UsagemodelPackage.eNS_URI);
+        EntityPackage theEntityPackage = (EntityPackage)EPackage.Registry.INSTANCE.getEPackage(EntityPackage.eNS_URI);
+        DlimPackage theDlimPackage = (DlimPackage)EPackage.Registry.INSTANCE.getEPackage(DlimPackage.eNS_URI);
+        UsagemodelPackage theUsagemodelPackage = (UsagemodelPackage)EPackage.Registry.INSTANCE.getEPackage(UsagemodelPackage.eNS_URI);
 
         // Create type parameters
 
@@ -283,31 +258,17 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
         usageEClass.getESuperTypes().add(theEntityPackage.getEntity());
 
         // Initialize classes and features; add operations and parameters
-        initEClass(usageEvolutionEClass, UsageEvolution.class, "UsageEvolution", !IS_ABSTRACT, !IS_INTERFACE,
-                IS_GENERATED_INSTANCE_CLASS);
-        initEReference(getUsageEvolution_Usages(), this.getUsage(), null, "usages", null, 1, -1, UsageEvolution.class,
-                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEClass(usageEvolutionEClass, UsageEvolution.class, "UsageEvolution", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        initEReference(getUsageEvolution_Usages(), this.getUsage(), null, "usages", null, 1, -1, UsageEvolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         initEClass(usageEClass, Usage.class, "Usage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-        initEReference(getUsage_LoadEvolution(), theDlimPackage.getSequence(), null, "loadEvolution", null, 0, 1,
-                Usage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        initEReference(getUsage_WorkEvolutions(), this.getWorkParameterEvolution(), null, "workEvolutions", null, 0,
-                -1, Usage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        initEReference(getUsage_Scenario(), theUsagemodelPackage.getUsageScenario(), null, "scenario", null, 1, 1,
-                Usage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getUsage_LoadEvolution(), theDlimPackage.getSequence(), null, "loadEvolution", null, 0, 1, Usage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getUsage_WorkEvolutions(), this.getWorkParameterEvolution(), null, "workEvolutions", null, 0, -1, Usage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getUsage_Scenario(), theUsagemodelPackage.getUsageScenario(), null, "scenario", null, 1, 1, Usage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-        initEClass(workParameterEvolutionEClass, WorkParameterEvolution.class, "WorkParameterEvolution", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-        initEReference(getWorkParameterEvolution_Evolution(), theDlimPackage.getSequence(), null, "evolution", null, 1,
-                1, WorkParameterEvolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-                IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        initEAttribute(getWorkParameterEvolution_ParameterName(), ecorePackage.getEString(), "parameterName", null, 0,
-                1, WorkParameterEvolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEClass(workParameterEvolutionEClass, WorkParameterEvolution.class, "WorkParameterEvolution", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        initEReference(getWorkParameterEvolution_Evolution(), theDlimPackage.getSequence(), null, "evolution", null, 1, 1, WorkParameterEvolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getWorkParameterEvolution_ParameterName(), ecorePackage.getEString(), "parameterName", null, 0, 1, WorkParameterEvolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         // Create resource
         createResource(eNS_URI);

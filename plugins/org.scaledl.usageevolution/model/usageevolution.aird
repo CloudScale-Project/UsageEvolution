@@ -2,14 +2,14 @@
 <viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" xmlns:genmodel_1="http://www.eclipse.org/uml2/2.2.0/GenModel" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_tsxjsDJ4EeSi18F_CRxZiw" selectedViews="_gM9TIDJ5EeSYApkZ8dQpPQ" version="8.1.1">
   <models xmi:type="ecore:EPackage" href="usageevolution.ecore#/"/>
   <models xmi:type="ecore:EPackage" href="platform:/plugin/de.uka.ipd.sdq.pcm/model/pcm.ecore#/"/>
-  <models xmi:type="ecore:EPackage" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#/"/>
+  <models xmi:type="ecore:EPackage" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#/"/>
   <models xmi:type="ecore:EPackage" href="http://www.eclipse.org/emf/2002/Ecore#/"/>
   <models xmi:type="ecore:EPackage" href="platform:/plugin/de.uka.ipd.sdq.stoex/model/stoex.ecore#/"/>
   <models xmi:type="ecore:EPackage" href="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#/"/>
   <models xmi:type="ecore:EPackage" href="platform:/plugin/de.uka.ipd.sdq.units/model/Units.ecore#/"/>
   <models xmi:type="ecore:EPackage" href="platform:/plugin/de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.ecore#/"/>
   <models xmi:type="genmodel:GenModel" href="usageevolution.genmodel#/"/>
-  <models xmi:type="genmodel:GenModel" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.genmodel#/"/>
+  <models xmi:type="genmodel:GenModel" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.genmodel#/"/>
   <models xmi:type="genmodel:GenModel" href="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.genmodel#/"/>
   <models xmi:type="genmodel_1:GenModel" href="platform:/plugin/de.uka.ipd.sdq.pcm/model/pcm.genmodel#/"/>
   <models xmi:type="genmodel_1:GenModel" href="platform:/plugin/de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#/"/>
@@ -329,34 +329,34 @@
           <cache xmi:type="diagram:DiagramElementMapping2ModelElement" xmi:id="_VhbvIDJ6EeSYApkZ8dQpPQ">
             <key xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
             <value xmi:type="diagram:ModelElement2ViewVariable" xmi:id="_VhbvITJ6EeSYApkZ8dQpPQ">
-              <key xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/firstIterationStart"/>
+              <key xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/firstIterationStart"/>
               <value xmi:type="diagram:ViewVariable2ContainerVariable" xmi:id="_VhbvIjJ6EeSYApkZ8dQpPQ" key="_VhbIFDJ6EeSYApkZ8dQpPQ">
                 <value xmi:type="diagram:ContainerVariable2StyleDescription" xmi:id="_VhbvJDJ6EeSYApkZ8dQpPQ" value="_VhbvIzJ6EeSYApkZ8dQpPQ">
-                  <key xmi:type="ecore:EClass" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence"/>
+                  <key xmi:type="ecore:EClass" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence"/>
                 </value>
               </value>
             </value>
             <value xmi:type="diagram:ModelElement2ViewVariable" xmi:id="_Vhc9QDJ6EeSYApkZ8dQpPQ">
-              <key xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/firstIterationEnd"/>
+              <key xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/firstIterationEnd"/>
               <value xmi:type="diagram:ViewVariable2ContainerVariable" xmi:id="_Vhc9QTJ6EeSYApkZ8dQpPQ" key="_VhcWNDJ6EeSYApkZ8dQpPQ">
                 <value xmi:type="diagram:ContainerVariable2StyleDescription" xmi:id="_Vhc9QzJ6EeSYApkZ8dQpPQ" value="_Vhc9QjJ6EeSYApkZ8dQpPQ">
-                  <key xmi:type="ecore:EClass" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence"/>
+                  <key xmi:type="ecore:EClass" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence"/>
                 </value>
               </value>
             </value>
             <value xmi:type="diagram:ModelElement2ViewVariable" xmi:id="_VheycDJ6EeSYApkZ8dQpPQ">
-              <key xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/loopDuration"/>
+              <key xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/loopDuration"/>
               <value xmi:type="diagram:ViewVariable2ContainerVariable" xmi:id="_VhgAkDJ6EeSYApkZ8dQpPQ" key="_VheLYDJ6EeSYApkZ8dQpPQ">
                 <value xmi:type="diagram:ContainerVariable2StyleDescription" xmi:id="_VhgAkjJ6EeSYApkZ8dQpPQ" value="_VhgAkTJ6EeSYApkZ8dQpPQ">
-                  <key xmi:type="ecore:EClass" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence"/>
+                  <key xmi:type="ecore:EClass" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence"/>
                 </value>
               </value>
             </value>
             <value xmi:type="diagram:ModelElement2ViewVariable" xmi:id="_Vhh1wDJ6EeSYApkZ8dQpPQ">
-              <key xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/finalDuration"/>
+              <key xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/finalDuration"/>
               <value xmi:type="diagram:ViewVariable2ContainerVariable" xmi:id="_Vhh1wTJ6EeSYApkZ8dQpPQ" key="_VhgnpDJ6EeSYApkZ8dQpPQ">
                 <value xmi:type="diagram:ContainerVariable2StyleDescription" xmi:id="_Vhh1wzJ6EeSYApkZ8dQpPQ" value="_Vhh1wjJ6EeSYApkZ8dQpPQ">
-                  <key xmi:type="ecore:EClass" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence"/>
+                  <key xmi:type="ecore:EClass" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence"/>
                 </value>
               </value>
             </value>
@@ -581,8 +581,8 @@
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_VhFJ0DJ6EeSYApkZ8dQpPQ" name="Sequence" tooltipText="" incomingEdges="_VhqYoDJ6EeSYApkZ8dQpPQ _VhrmwDJ6EeSYApkZ8dQpPQ" width="12" height="10">
-        <target xmi:type="ecore:EClass" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence"/>
-        <semanticElements xmi:type="ecore:EClass" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence"/>
+        <target xmi:type="ecore:EClass" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence"/>
+        <semanticElements xmi:type="ecore:EClass" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence"/>
         <decorations xmi:type="viewpoint:Decoration" xmi:id="_VhmuQDJ6EeSYApkZ8dQpPQ">
           <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
         </decorations>
@@ -601,8 +601,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VhZS4DJ6EeSYApkZ8dQpPQ" name="name : EString" tooltipText="">
-          <target xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/name"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/name"/>
+          <target xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/name"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/name"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_VhZ58DJ6EeSYApkZ8dQpPQ" labelSize="10" labelAlignment="LEFT">
             <customFeatures>labelSize</customFeatures>
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_VhZ58TJ6EeSYApkZ8dQpPQ"/>
@@ -613,8 +613,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VhZ59DJ6EeSYApkZ8dQpPQ" name="terminateAfterTime : EDouble = 0.0" tooltipText="">
-          <target xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/terminateAfterTime"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/terminateAfterTime"/>
+          <target xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/terminateAfterTime"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/terminateAfterTime"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_VhahADJ6EeSYApkZ8dQpPQ" labelSize="10" labelAlignment="LEFT">
             <customFeatures>labelSize</customFeatures>
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_VhahATJ6EeSYApkZ8dQpPQ"/>
@@ -625,8 +625,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VhahBDJ6EeSYApkZ8dQpPQ" name="terminateAfterLoops : EInt = -1" tooltipText="">
-          <target xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/terminateAfterLoops"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/terminateAfterLoops"/>
+          <target xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/terminateAfterLoops"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/terminateAfterLoops"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_VhbIEDJ6EeSYApkZ8dQpPQ" labelSize="10" labelAlignment="LEFT">
             <customFeatures>labelSize</customFeatures>
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_VhbIETJ6EeSYApkZ8dQpPQ"/>
@@ -637,8 +637,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VhbIFDJ6EeSYApkZ8dQpPQ" name="/firstIterationStart : EDouble = 0.0" tooltipText="">
-          <target xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/firstIterationStart"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/firstIterationStart"/>
+          <target xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/firstIterationStart"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/firstIterationStart"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_VhcWMDJ6EeSYApkZ8dQpPQ" labelSize="10" labelAlignment="LEFT" description="_VhbvIzJ6EeSYApkZ8dQpPQ">
             <customFeatures>labelSize</customFeatures>
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_VhcWMTJ6EeSYApkZ8dQpPQ" red="39" green="76" blue="114"/>
@@ -648,8 +648,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VhcWNDJ6EeSYApkZ8dQpPQ" name="/firstIterationEnd : EDouble = 0.0" tooltipText="">
-          <target xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/firstIterationEnd"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/firstIterationEnd"/>
+          <target xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/firstIterationEnd"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/firstIterationEnd"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_VhdkUDJ6EeSYApkZ8dQpPQ" labelSize="10" labelAlignment="LEFT" description="_Vhc9QjJ6EeSYApkZ8dQpPQ">
             <customFeatures>labelSize</customFeatures>
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_VhdkUTJ6EeSYApkZ8dQpPQ" red="39" green="76" blue="114"/>
@@ -659,8 +659,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VheLYDJ6EeSYApkZ8dQpPQ" name="/loopDuration : EDouble = 0.0" tooltipText="">
-          <target xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/loopDuration"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/loopDuration"/>
+          <target xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/loopDuration"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/loopDuration"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_VhgnoDJ6EeSYApkZ8dQpPQ" labelSize="10" labelAlignment="LEFT" description="_VhgAkTJ6EeSYApkZ8dQpPQ">
             <customFeatures>labelSize</customFeatures>
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_VhgnoTJ6EeSYApkZ8dQpPQ" red="39" green="76" blue="114"/>
@@ -670,8 +670,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VhgnpDJ6EeSYApkZ8dQpPQ" name="/finalDuration : EDouble = 0.0" tooltipText="">
-          <target xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/finalDuration"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/finalDuration"/>
+          <target xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/finalDuration"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/finalDuration"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_Vhic0DJ6EeSYApkZ8dQpPQ" labelSize="10" labelAlignment="LEFT" description="_Vhh1wjJ6EeSYApkZ8dQpPQ">
             <customFeatures>labelSize</customFeatures>
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Vhic0TJ6EeSYApkZ8dQpPQ" red="39" green="76" blue="114"/>
@@ -681,10 +681,10 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
         <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VhjD4DJ6EeSYApkZ8dQpPQ" name="durationDefined(chain EDiagnosticChain, context EMap) : EBoolean" tooltipText="durationDefined(chain, context) : EBoolean">
-          <target xmi:type="ecore:EOperation" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/durationDefined"/>
-          <semanticElements xmi:type="ecore:EOperation" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/durationDefined"/>
-          <semanticElements xmi:type="ecore:EParameter" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/durationDefined/chain"/>
-          <semanticElements xmi:type="ecore:EParameter" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#//Sequence/durationDefined/context"/>
+          <target xmi:type="ecore:EOperation" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/durationDefined"/>
+          <semanticElements xmi:type="ecore:EOperation" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/durationDefined"/>
+          <semanticElements xmi:type="ecore:EParameter" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/durationDefined/chain"/>
+          <semanticElements xmi:type="ecore:EParameter" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence/durationDefined/context"/>
           <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_VhlgIDJ6EeSYApkZ8dQpPQ" labelSize="10" labelAlignment="LEFT">
             <customFeatures>labelSize</customFeatures>
             <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_VhlgITJ6EeSYApkZ8dQpPQ"/>
@@ -1437,8 +1437,8 @@
         </data>
       </ownedAnnotationEntries>
       <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_gXfIITJ5EeSYApkZ8dQpPQ" width="-1" height="-1">
-        <target xmi:type="ecore:EPackage" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#/"/>
-        <semanticElements xmi:type="ecore:EPackage" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#/"/>
+        <target xmi:type="ecore:EPackage" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#/"/>
+        <semanticElements xmi:type="ecore:EPackage" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#/"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_gXfIIjJ5EeSYApkZ8dQpPQ" showIcon="false" labelPosition="node" workspacePath="/org.eclipse.emf.ecoretools.design/icons/full/back/empty.svg">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_gXfIIzJ5EeSYApkZ8dQpPQ"/>
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@nodeMappings[name='Empty%20Diagram']/@style"/>
@@ -1451,7 +1451,7 @@
       <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer"/>
       <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
       <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
-      <target xmi:type="ecore:EPackage" href="platform:/plugin/dlim.generator/src/dlim/model/dlim.ecore#/"/>
+      <target xmi:type="ecore:EPackage" href="platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#/"/>
     </ownedRepresentations>
     <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_gXtKkDJ5EeSYApkZ8dQpPQ" name="ecore class diagram">
       <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_gXtKljJ5EeSYApkZ8dQpPQ" source="GMF_DIAGRAMS">

@@ -13,9 +13,8 @@ import tools.descartes.dlim.Sequence;
  * <p>
  * The following features are supported:
  * <ul>
- * <li>{@link org.scaledl.usageevolution.WorkParameterEvolution#getEvolution <em>Evolution</em>}</li>
- * <li>{@link org.scaledl.usageevolution.WorkParameterEvolution#getParameterName <em>Parameter Name
- * </em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.WorkParameterEvolution#getEvolution <em>Evolution</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.WorkParameterEvolution#getParameterName <em>Parameter Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -25,13 +24,13 @@ import tools.descartes.dlim.Sequence;
  */
 public interface WorkParameterEvolution extends EObject {
     /**
-     * Returns the value of the '<em><b>Evolution</b></em>' reference. <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Evolution</b></em>' reference.
+     * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Evolution</em>' reference isn't clear, there really should be more
      * of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Evolution</em>' reference.
      * @see #setEvolution(Sequence)
      * @see org.scaledl.usageevolution.UsageevolutionPackage#getWorkParameterEvolution_Evolution()
@@ -41,24 +40,22 @@ public interface WorkParameterEvolution extends EObject {
     Sequence getEvolution();
 
     /**
-     * Sets the value of the '{@link org.scaledl.usageevolution.WorkParameterEvolution#getEvolution
-     * <em>Evolution</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Evolution</em>' reference.
+     * Sets the value of the '{@link org.scaledl.usageevolution.WorkParameterEvolution#getEvolution <em>Evolution</em>}' reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @param value the new value of the '<em>Evolution</em>' reference.
      * @see #getEvolution()
      * @generated
      */
     void setEvolution(Sequence value);
 
     /**
-     * Returns the value of the '<em><b>Parameter Name</b></em>' attribute. <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Parameter Name</b></em>' attribute.
+     * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Parameter Name</em>' attribute isn't clear, there really should be
      * more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
      * @return the value of the '<em>Parameter Name</em>' attribute.
      * @see #setParameterName(String)
      * @see org.scaledl.usageevolution.UsageevolutionPackage#getWorkParameterEvolution_ParameterName()
@@ -68,12 +65,9 @@ public interface WorkParameterEvolution extends EObject {
     String getParameterName();
 
     /**
-     * Sets the value of the '
-     * {@link org.scaledl.usageevolution.WorkParameterEvolution#getParameterName
-     * <em>Parameter Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @param value
-     *            the new value of the '<em>Parameter Name</em>' attribute.
+     * Sets the value of the '{@link org.scaledl.usageevolution.WorkParameterEvolution#getParameterName <em>Parameter Name</em>}' attribute.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @param value the new value of the '<em>Parameter Name</em>' attribute.
      * @see #getParameterName()
      * @generated
      */

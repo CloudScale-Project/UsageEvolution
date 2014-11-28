@@ -27,9 +27,9 @@ import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario;
  * <p>
  * The following features are implemented:
  * <ul>
- * <li>{@link org.scaledl.usageevolution.impl.UsageImpl#getLoadEvolution <em>Load Evolution</em>}</li>
- * <li>{@link org.scaledl.usageevolution.impl.UsageImpl#getWorkEvolutions <em>Work Evolutions</em>}</li>
- * <li>{@link org.scaledl.usageevolution.impl.UsageImpl#getScenario <em>Scenario</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.impl.UsageImpl#getLoadEvolution <em>Load Evolution</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.impl.UsageImpl#getWorkEvolutions <em>Work Evolutions</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.impl.UsageImpl#getScenario <em>Scenario</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,9 +47,8 @@ public class UsageImpl extends EntityImpl implements Usage {
     protected Sequence loadEvolution;
 
     /**
-     * The cached value of the '{@link #getWorkEvolutions() <em>Work Evolutions</em>}' containment
-     * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * The cached value of the '{@link #getWorkEvolutions() <em>Work Evolutions</em>}' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @see #getWorkEvolutions()
      * @generated
      * @ordered
@@ -68,7 +67,6 @@ public class UsageImpl extends EntityImpl implements Usage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     protected UsageImpl() {
@@ -77,7 +75,6 @@ public class UsageImpl extends EntityImpl implements Usage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -87,18 +84,16 @@ public class UsageImpl extends EntityImpl implements Usage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public Sequence getLoadEvolution() {
         if (loadEvolution != null && loadEvolution.eIsProxy()) {
-            InternalEObject oldLoadEvolution = (InternalEObject) loadEvolution;
-            loadEvolution = (Sequence) eResolveProxy(oldLoadEvolution);
+            InternalEObject oldLoadEvolution = (InternalEObject)loadEvolution;
+            loadEvolution = (Sequence)eResolveProxy(oldLoadEvolution);
             if (loadEvolution != oldLoadEvolution) {
                 if (eNotificationRequired())
-                    eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-                            UsageevolutionPackage.USAGE__LOAD_EVOLUTION, oldLoadEvolution, loadEvolution));
+                    eNotify(new ENotificationImpl(this, Notification.RESOLVE, UsageevolutionPackage.USAGE__LOAD_EVOLUTION, oldLoadEvolution, loadEvolution));
             }
         }
         return loadEvolution;
@@ -106,7 +101,6 @@ public class UsageImpl extends EntityImpl implements Usage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     public Sequence basicGetLoadEvolution() {
@@ -115,7 +109,6 @@ public class UsageImpl extends EntityImpl implements Usage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -123,38 +116,33 @@ public class UsageImpl extends EntityImpl implements Usage {
         Sequence oldLoadEvolution = loadEvolution;
         loadEvolution = newLoadEvolution;
         if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, UsageevolutionPackage.USAGE__LOAD_EVOLUTION,
-                    oldLoadEvolution, loadEvolution));
+            eNotify(new ENotificationImpl(this, Notification.SET, UsageevolutionPackage.USAGE__LOAD_EVOLUTION, oldLoadEvolution, loadEvolution));
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public EList<WorkParameterEvolution> getWorkEvolutions() {
         if (workEvolutions == null) {
-            workEvolutions = new EObjectContainmentEList<WorkParameterEvolution>(WorkParameterEvolution.class, this,
-                    UsageevolutionPackage.USAGE__WORK_EVOLUTIONS);
+            workEvolutions = new EObjectContainmentEList<WorkParameterEvolution>(WorkParameterEvolution.class, this, UsageevolutionPackage.USAGE__WORK_EVOLUTIONS);
         }
         return workEvolutions;
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public UsageScenario getScenario() {
-        if (scenario != null && ((EObject) scenario).eIsProxy()) {
-            InternalEObject oldScenario = (InternalEObject) scenario;
-            scenario = (UsageScenario) eResolveProxy(oldScenario);
+        if (scenario != null && ((EObject)scenario).eIsProxy()) {
+            InternalEObject oldScenario = (InternalEObject)scenario;
+            scenario = (UsageScenario)eResolveProxy(oldScenario);
             if (scenario != oldScenario) {
                 if (eNotificationRequired())
-                    eNotify(new ENotificationImpl(this, Notification.RESOLVE, UsageevolutionPackage.USAGE__SCENARIO,
-                            oldScenario, scenario));
+                    eNotify(new ENotificationImpl(this, Notification.RESOLVE, UsageevolutionPackage.USAGE__SCENARIO, oldScenario, scenario));
             }
         }
         return scenario;
@@ -162,7 +150,6 @@ public class UsageImpl extends EntityImpl implements Usage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     public UsageScenario basicGetScenario() {
@@ -171,7 +158,6 @@ public class UsageImpl extends EntityImpl implements Usage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
@@ -179,104 +165,96 @@ public class UsageImpl extends EntityImpl implements Usage {
         UsageScenario oldScenario = scenario;
         scenario = newScenario;
         if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, UsageevolutionPackage.USAGE__SCENARIO, oldScenario,
-                    scenario));
+            eNotify(new ENotificationImpl(this, Notification.SET, UsageevolutionPackage.USAGE__SCENARIO, oldScenario, scenario));
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
         switch (featureID) {
-        case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
-            return ((InternalEList<?>) getWorkEvolutions()).basicRemove(otherEnd, msgs);
+            case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
+                return ((InternalEList<?>)getWorkEvolutions()).basicRemove(otherEnd, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
         switch (featureID) {
-        case UsageevolutionPackage.USAGE__LOAD_EVOLUTION:
-            if (resolve)
-                return getLoadEvolution();
-            return basicGetLoadEvolution();
-        case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
-            return getWorkEvolutions();
-        case UsageevolutionPackage.USAGE__SCENARIO:
-            if (resolve)
-                return getScenario();
-            return basicGetScenario();
+            case UsageevolutionPackage.USAGE__LOAD_EVOLUTION:
+                if (resolve) return getLoadEvolution();
+                return basicGetLoadEvolution();
+            case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
+                return getWorkEvolutions();
+            case UsageevolutionPackage.USAGE__SCENARIO:
+                if (resolve) return getScenario();
+                return basicGetScenario();
         }
         return super.eGet(featureID, resolve, coreType);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
         switch (featureID) {
-        case UsageevolutionPackage.USAGE__LOAD_EVOLUTION:
-            setLoadEvolution((Sequence) newValue);
-            return;
-        case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
-            getWorkEvolutions().clear();
-            getWorkEvolutions().addAll((Collection<? extends WorkParameterEvolution>) newValue);
-            return;
-        case UsageevolutionPackage.USAGE__SCENARIO:
-            setScenario((UsageScenario) newValue);
-            return;
+            case UsageevolutionPackage.USAGE__LOAD_EVOLUTION:
+                setLoadEvolution((Sequence)newValue);
+                return;
+            case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
+                getWorkEvolutions().clear();
+                getWorkEvolutions().addAll((Collection<? extends WorkParameterEvolution>)newValue);
+                return;
+            case UsageevolutionPackage.USAGE__SCENARIO:
+                setScenario((UsageScenario)newValue);
+                return;
         }
         super.eSet(featureID, newValue);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public void eUnset(int featureID) {
         switch (featureID) {
-        case UsageevolutionPackage.USAGE__LOAD_EVOLUTION:
-            setLoadEvolution((Sequence) null);
-            return;
-        case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
-            getWorkEvolutions().clear();
-            return;
-        case UsageevolutionPackage.USAGE__SCENARIO:
-            setScenario((UsageScenario) null);
-            return;
+            case UsageevolutionPackage.USAGE__LOAD_EVOLUTION:
+                setLoadEvolution((Sequence)null);
+                return;
+            case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
+                getWorkEvolutions().clear();
+                return;
+            case UsageevolutionPackage.USAGE__SCENARIO:
+                setScenario((UsageScenario)null);
+                return;
         }
         super.eUnset(featureID);
     }
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
      * @generated
      */
     @Override
     public boolean eIsSet(int featureID) {
         switch (featureID) {
-        case UsageevolutionPackage.USAGE__LOAD_EVOLUTION:
-            return loadEvolution != null;
-        case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
-            return workEvolutions != null && !workEvolutions.isEmpty();
-        case UsageevolutionPackage.USAGE__SCENARIO:
-            return scenario != null;
+            case UsageevolutionPackage.USAGE__LOAD_EVOLUTION:
+                return loadEvolution != null;
+            case UsageevolutionPackage.USAGE__WORK_EVOLUTIONS:
+                return workEvolutions != null && !workEvolutions.isEmpty();
+            case UsageevolutionPackage.USAGE__SCENARIO:
+                return scenario != null;
         }
         return super.eIsSet(featureID);
     }
