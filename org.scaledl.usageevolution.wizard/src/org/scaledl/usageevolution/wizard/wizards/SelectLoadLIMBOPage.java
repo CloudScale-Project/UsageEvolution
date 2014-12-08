@@ -35,7 +35,7 @@ public class SelectLoadLIMBOPage extends WizardPage {
     public SelectLoadLIMBOPage(ISelection selection) {
         super("wizardPage3");
         setTitle("Create Usage Evolution Model (step 3 of 3)");
-        setDescription("Select a DLIM model created with the LIMBO tool that defines the load evolution");
+        setDescription("Select a DLIM model created with the LIMBO tool that defines the load evolution\n(leave empty to define this at a later stage)");
         this.selection = selection;
     }
 

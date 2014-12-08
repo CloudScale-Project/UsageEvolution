@@ -64,7 +64,7 @@ public class UsageEvolutionWizard extends Wizard implements INewWizard {
 	    newFilePage = new WizardNewFileCreationPage("New usage evolution", selection);
 	    newFilePage.setFileExtension(FILEEXTENSION);
 	    newFilePage.setTitle("Usage Evolution Model");
-	    newFilePage.setMessage("Create a new usage evolution model");
+        newFilePage.setTitle("Create Usage Evolution Model (step 1 of 3)");
         newFilePage.setFileName(DEFAULT_FILENAME + "." + FILEEXTENSION);
         //newFilePage.setModel(setupModel);
 	    

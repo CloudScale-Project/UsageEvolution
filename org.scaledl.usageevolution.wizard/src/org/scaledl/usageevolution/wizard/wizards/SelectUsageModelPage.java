@@ -48,7 +48,7 @@ public class SelectUsageModelPage extends WizardPage {
     public SelectUsageModelPage(ISelection selection) {
         super("wizardPage");
         setTitle("Create Usage Evolution Model (step 2 of 3)");
-        setDescription("Select Palladio usage model to create an evolution for");
+        setDescription("Select Palladio usage model to create an evolution for\n(leave empty to define this at a later stage)");
         this.selection = selection;
     }
 
