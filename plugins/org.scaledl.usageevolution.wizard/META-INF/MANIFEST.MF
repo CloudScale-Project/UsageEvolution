@@ -20,5 +20,5 @@ Require-Bundle: org.eclipse.ui,
  org.scaledl.usageevolution;bundle-version="0.1.0",
  tools.descartes.dlim.generator,
  org.eclipse.emf.common.ui;bundle-version="2.0.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
