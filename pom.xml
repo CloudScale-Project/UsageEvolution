@@ -10,6 +10,7 @@
     <module>plugins/org.scaledl.usageevolution</module>
     <module>plugins/org.scaledl.usageevolution.edit</module>
     <module>plugins/org.scaledl.usageevolution.editor</module>
+    <module>plugins/org.scaledl.usageevolution.wizard</module>
     <module>features/org.scaledl.usageevolution.feature</module>
     <module>features/org.scaledl.usageevolution.updatesite</module>
   </modules>
