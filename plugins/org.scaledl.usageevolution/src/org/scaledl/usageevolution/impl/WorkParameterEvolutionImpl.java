@@ -2,8 +2,10 @@
  */
 package org.scaledl.usageevolution.impl;
 
+import de.uka.ipd.sdq.pcm.parameter.VariableCharacterisation;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
@@ -19,7 +21,7 @@ import tools.descartes.dlim.Sequence;
  * The following features are implemented:
  * <ul>
  *   <li>{@link org.scaledl.usageevolution.impl.WorkParameterEvolutionImpl#getEvolution <em>Evolution</em>}</li>
- *   <li>{@link org.scaledl.usageevolution.impl.WorkParameterEvolutionImpl#getParameterName <em>Parameter Name</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.impl.WorkParameterEvolutionImpl#getVariableCharacterisation <em>Variable Characterisation</em>}</li>
  * </ul>
  * </p>
  *
@@ -37,23 +39,14 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
     protected Sequence evolution;
 
     /**
-     * The default value of the '{@link #getParameterName() <em>Parameter Name</em>}' attribute.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @see #getParameterName()
+     * The cached value of the '{@link #getVariableCharacterisation() <em>Variable Characterisation</em>}' reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getVariableCharacterisation()
      * @generated
      * @ordered
      */
-    protected static final String PARAMETER_NAME_EDEFAULT = null;
-
-    /**
-     * The cached value of the '{@link #getParameterName() <em>Parameter Name</em>}' attribute. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @see #getParameterName()
-     * @generated
-     * @ordered
-     */
-    protected String parameterName = PARAMETER_NAME_EDEFAULT;
+    protected VariableCharacterisation variableCharacterisation;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -110,24 +103,41 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
     }
 
     /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-    @Override
-    public String getParameterName() {
-        return parameterName;
+    public VariableCharacterisation getVariableCharacterisation() {
+        if (variableCharacterisation != null && ((EObject)variableCharacterisation).eIsProxy()) {
+            InternalEObject oldVariableCharacterisation = (InternalEObject)variableCharacterisation;
+            variableCharacterisation = (VariableCharacterisation)eResolveProxy(oldVariableCharacterisation);
+            if (variableCharacterisation != oldVariableCharacterisation) {
+                if (eNotificationRequired())
+                    eNotify(new ENotificationImpl(this, Notification.RESOLVE, UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION, oldVariableCharacterisation, variableCharacterisation));
+            }
+        }
+        return variableCharacterisation;
     }
 
     /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-    @Override
-    public void setParameterName(String newParameterName) {
-        String oldParameterName = parameterName;
-        parameterName = newParameterName;
+    public VariableCharacterisation basicGetVariableCharacterisation() {
+        return variableCharacterisation;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void setVariableCharacterisation(VariableCharacterisation newVariableCharacterisation) {
+        VariableCharacterisation oldVariableCharacterisation = variableCharacterisation;
+        variableCharacterisation = newVariableCharacterisation;
         if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME, oldParameterName, parameterName));
+            eNotify(new ENotificationImpl(this, Notification.SET, UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION, oldVariableCharacterisation, variableCharacterisation));
     }
 
     /**
@@ -140,8 +150,9 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
             case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
                 if (resolve) return getEvolution();
                 return basicGetEvolution();
-            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
-                return getParameterName();
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION:
+                if (resolve) return getVariableCharacterisation();
+                return basicGetVariableCharacterisation();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -156,8 +167,8 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
             case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
                 setEvolution((Sequence)newValue);
                 return;
-            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
-                setParameterName((String)newValue);
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION:
+                setVariableCharacterisation((VariableCharacterisation)newValue);
                 return;
         }
         super.eSet(featureID, newValue);
@@ -173,8 +184,8 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
             case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
                 setEvolution((Sequence)null);
                 return;
-            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
-                setParameterName(PARAMETER_NAME_EDEFAULT);
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION:
+                setVariableCharacterisation((VariableCharacterisation)null);
                 return;
         }
         super.eUnset(featureID);
@@ -189,25 +200,10 @@ public class WorkParameterEvolutionImpl extends MinimalEObjectImpl.Container imp
         switch (featureID) {
             case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__EVOLUTION:
                 return evolution != null;
-            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
-                return PARAMETER_NAME_EDEFAULT == null ? parameterName != null : !PARAMETER_NAME_EDEFAULT.equals(parameterName);
+            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION:
+                return variableCharacterisation != null;
         }
         return super.eIsSet(featureID);
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public String toString() {
-        if (eIsProxy()) return super.toString();
-
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (parameterName: ");
-        result.append(parameterName);
-        result.append(')');
-        return result.toString();
     }
 
 } // WorkParameterEvolutionImpl

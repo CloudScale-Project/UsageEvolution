@@ -8,9 +8,9 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
+import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -20,10 +20,12 @@ import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
-import org.eclipse.emf.edit.provider.ViewerNotification;
-
 import org.scaledl.usageevolution.UsageevolutionPackage;
 import org.scaledl.usageevolution.WorkParameterEvolution;
+
+import de.uka.ipd.sdq.pcm.parameter.VariableCharacterisation;
+import de.uka.ipd.sdq.pcm.parameter.VariableUsage;
+import de.uka.ipd.sdq.pcm.usagemodel.EntryLevelSystemCall;
 
 /**
  * This is the item provider adapter for a {@link org.scaledl.usageevolution.WorkParameterEvolution} object.
@@ -55,17 +57,37 @@ public class WorkParameterEvolutionItemProvider
 	 * <!-- end-user-doc -->
      * @generated
      */
-	@Override
-	public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object) {
+	public List<IItemPropertyDescriptor> getPropertyDescriptorsGen(Object object) {
         if (itemPropertyDescriptors == null) {
             super.getPropertyDescriptors(object);
 
-            addEvolutionPropertyDescriptor(object);
-            addParameterNamePropertyDescriptor(object);
         }
         return itemPropertyDescriptors;
     }
 
+	
+    
+    /**
+     * This returns the property descriptors for the adapted class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated NOT
+     */
+    @Override
+    public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object) {
+        //itemPropertyDescriptors = null; // Force rebuild
+        if (itemPropertyDescriptors == null) {
+            getPropertyDescriptorsGen(object);
+
+            addEvolutionPropertyDescriptor(object);
+            addVariableCharacterisationPropertyDescriptor(object);
+
+        }
+        return itemPropertyDescriptors;
+    }	
+	
+	
+	
 	/**
      * This adds a property descriptor for the Evolution feature.
      * <!-- begin-user-doc -->
@@ -88,29 +110,162 @@ public class WorkParameterEvolutionItemProvider
                  null));
     }
 
-	/**
-     * This adds a property descriptor for the Parameter Name feature.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
-	protected void addParameterNamePropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_WorkParameterEvolution_parameterName_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_WorkParameterEvolution_parameterName_feature", "_UI_WorkParameterEvolution_type"),
-                 UsageevolutionPackage.Literals.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                 null,
-                 null));
-    }
+	
+	class VariableCharacterisationPropertyDescriptor extends ItemPropertyDescriptor {
 
+        public VariableCharacterisationPropertyDescriptor(AdapterFactory adapterFactory, ResourceLocator resourceLocator,
+                String displayName, String description, EStructuralFeature feature, boolean isSettable,
+                boolean multiLine, boolean sortChoices, Object staticImage, String category, String[] filterFlags) {
+            super(adapterFactory, resourceLocator, displayName, description, feature, isSettable, multiLine, sortChoices,
+                    staticImage, category, filterFlags);
+            // TODO Auto-generated constructor stub
+        }
+
+        public IItemLabelProvider getOrgLabelProvider(Object thisObject) {
+            return super.getLabelProvider(thisObject);
+        }
+
+        @Override
+        public IItemLabelProvider getLabelProvider(Object thisObject) {
+//               return new AdaptedVariableCharacterisationItemProvider(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory());
+//           }
+         
+            
+            return new IItemLabelProvider() {
+
+                @Override
+                public String getText(Object object) {
+                    if (object instanceof VariableCharacterisation) {
+                        VariableCharacterisation varChar = (VariableCharacterisation) object;
+                        try {
+                            VariableUsage usage = varChar.getVariableUsage_VariableCharacterisation();
+                            
+                            String ref = usage.getNamedReference__VariableUsage().getReferenceName();
+                            if (usage.eContainer() instanceof EntryLevelSystemCall)  {
+                                EntryLevelSystemCall call = (EntryLevelSystemCall) usage.eContainer();
+                                ref = call.getOperationSignature__EntryLevelSystemCall().getEntityName() + "." + ref;
+                                ref = call.getOperationSignature__EntryLevelSystemCall().getInterface__OperationSignature().getEntityName() + "." + ref;
+                            }
+                            return ref + "." + varChar.getType().getName();//      getOrgLabelProvider(object).getText(object);
+                        } catch (Exception e) {
+                            return getOrgLabelProvider(object).getText(object);
+                        }
+                    }
+                    return getOrgLabelProvider(object).getText(object);
+                }
+
+                @Override
+                public Object getImage(Object object) {
+                    return getOrgLabelProvider(object).getImage(object);
+                }
+                
+            };
+        }        	    
+	}
+	
+	
+	protected void addVariableCharacterisationPropertyDescriptor(Object object) {
+	  
+    //IItemLabelProvider test;
+    //test.
+  
+        itemPropertyDescriptors.add( new  VariableCharacterisationPropertyDescriptor(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+            getResourceLocator(),
+            getString("_UI_WorkParameterEvolution_variableCharacterisation_feature"),
+            getString("_UI_PropertyDescriptor_description", "_UI_WorkParameterEvolution_variableCharacterisation_feature", "_UI_WorkParameterEvolution_type"),
+            UsageevolutionPackage.Literals.WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION,
+            true,
+            false,
+            true,
+            null,
+            null,
+            null) );
+	    
+  }
+	
+	
+	
+	
 	/**
+     * This adds a property descriptor for the Variable Characterisation feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated NOT
+     */
+
+/*	protected void addVariableCharacterisationPropertyDescriptor(Object object) {
+  
+        //IItemLabelProvider test;
+        //test.
+        
+        IItemPropertyDescriptor propDesc = createItemPropertyDescriptor
+                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString("_UI_WorkParameterEvolution_variableCharacterisation_feature"),
+                        getString("_UI_PropertyDescriptor_description", "_UI_WorkParameterEvolution_variableCharacterisation_feature", "_UI_WorkParameterEvolution_type"),
+                        UsageevolutionPackage.Literals.WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION,
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null);
+
+        if (object instanceof WorkParameterEvolution) {
+            //VariableCharacterisation varChar = ((WorkParameterEvolution)object).getVariableCharacterisation();
+//            itemPropertyDescriptors.add( new ItemPropertyDescriptorDecorator(object, propDesc) {
+            itemPropertyDescriptors.add( new ItemPropertyDescriptorDecorator2(propDesc) {
+                
+                public IItemLabelProvider getOrgLabelProvider(Object thisObject) {
+                    return super.getLabelProvider(thisObject);
+                }
+
+                @Override
+                public IItemLabelProvider getLabelProvider(Object thisObject) {
+ //                   return new AdaptedVariableCharacterisationItemProvider(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory());
+ //               }
+                 
+                    
+                    return new IItemLabelProvider() {
+
+                        @Override
+                        public String getText(Object object) {
+                            if (object instanceof VariableCharacterisation) {
+                                VariableCharacterisation varChar = (VariableCharacterisation) object;
+                                try {
+                                    VariableUsage usage = varChar.getVariableUsage_VariableCharacterisation();
+                                    
+                                    String ref = usage.getNamedReference__VariableUsage().getReferenceName();
+                                    if (usage.eContainer() instanceof EntryLevelSystemCall)  {
+                                        EntryLevelSystemCall call = (EntryLevelSystemCall) usage.eContainer();
+                                        ref = call.getOperationSignature__EntryLevelSystemCall().getEntityName() + "." + ref;
+                                        ref = call.getOperationSignature__EntryLevelSystemCall().getInterface__OperationSignature().getEntityName() + "." + ref;
+                                    }
+                                    return ref + "." + varChar.getType().getName();//      getOrgLabelProvider(object).getText(object);
+                                } catch (Exception e) {
+                                    return getOrgLabelProvider(object).getText(object);
+                                }
+                            }
+                            return getOrgLabelProvider(object).getText(object);
+                        }
+
+                        @Override
+                        public Object getImage(Object object) {
+                            return getOrgLabelProvider(object).getImage(object);
+                        }
+                        
+                    };
+                }
+                
+            });          
+            
+        } else {
+            itemPropertyDescriptors.add(propDesc);        
+        }
+        
+      }
+*/
+    /**
      * This returns WorkParameterEvolution.gif.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -129,10 +284,7 @@ public class WorkParameterEvolutionItemProvider
      */
 	@Override
 	public String getText(Object object) {
-        String label = ((WorkParameterEvolution)object).getParameterName();
-        return label == null || label.length() == 0 ?
-            getString("_UI_WorkParameterEvolution_type") :
-            getString("_UI_WorkParameterEvolution_type") + " " + label;
+        return getString("_UI_WorkParameterEvolution_type");
     }
 
 	/**
@@ -145,12 +297,6 @@ public class WorkParameterEvolutionItemProvider
 	@Override
 	public void notifyChanged(Notification notification) {
         updateChildren(notification);
-
-        switch (notification.getFeatureID(WorkParameterEvolution.class)) {
-            case UsageevolutionPackage.WORK_PARAMETER_EVOLUTION__PARAMETER_NAME:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-                return;
-        }
         super.notifyChanged(notification);
     }
 

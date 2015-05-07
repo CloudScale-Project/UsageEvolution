@@ -20,7 +20,8 @@
     </genClasses>
     <genClasses ecoreClass="usageevolution.ecore#//WorkParameterEvolution">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference usageevolution.ecore#//WorkParameterEvolution/evolution"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usageevolution.ecore#//WorkParameterEvolution/parameterName"/>
+      <genFeatures notify="false" createChild="false" propertyCategory="" propertyDescription=""
+          propertySortChoices="true" ecoreFeature="ecore:EReference usageevolution.ecore#//WorkParameterEvolution/variableCharacterisation"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

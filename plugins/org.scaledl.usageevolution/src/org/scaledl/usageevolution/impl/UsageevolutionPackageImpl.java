@@ -2,7 +2,6 @@
  */
 package org.scaledl.usageevolution.impl;
 
-import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -12,10 +11,10 @@ import org.scaledl.usageevolution.UsageEvolution;
 import org.scaledl.usageevolution.UsageevolutionFactory;
 import org.scaledl.usageevolution.UsageevolutionPackage;
 import org.scaledl.usageevolution.WorkParameterEvolution;
-
 import tools.descartes.dlim.DlimPackage;
 import de.uka.ipd.sdq.pcm.PcmPackage;
 import de.uka.ipd.sdq.pcm.core.entity.EntityPackage;
+import de.uka.ipd.sdq.pcm.parameter.ParameterPackage;
 import de.uka.ipd.sdq.pcm.usagemodel.UsagemodelPackage;
 
 /**
@@ -176,12 +175,12 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
     }
 
     /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-    @Override
-    public EAttribute getWorkParameterEvolution_ParameterName() {
-        return (EAttribute)workParameterEvolutionEClass.getEStructuralFeatures().get(1);
+    public EReference getWorkParameterEvolution_VariableCharacterisation() {
+        return (EReference)workParameterEvolutionEClass.getEStructuralFeatures().get(1);
     }
 
     /**
@@ -220,7 +219,7 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
 
         workParameterEvolutionEClass = createEClass(WORK_PARAMETER_EVOLUTION);
         createEReference(workParameterEvolutionEClass, WORK_PARAMETER_EVOLUTION__EVOLUTION);
-        createEAttribute(workParameterEvolutionEClass, WORK_PARAMETER_EVOLUTION__PARAMETER_NAME);
+        createEReference(workParameterEvolutionEClass, WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION);
     }
 
     /**
@@ -248,6 +247,7 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
         EntityPackage theEntityPackage = (EntityPackage)EPackage.Registry.INSTANCE.getEPackage(EntityPackage.eNS_URI);
         DlimPackage theDlimPackage = (DlimPackage)EPackage.Registry.INSTANCE.getEPackage(DlimPackage.eNS_URI);
         UsagemodelPackage theUsagemodelPackage = (UsagemodelPackage)EPackage.Registry.INSTANCE.getEPackage(UsagemodelPackage.eNS_URI);
+        ParameterPackage theParameterPackage = (ParameterPackage)EPackage.Registry.INSTANCE.getEPackage(ParameterPackage.eNS_URI);
 
         // Create type parameters
 
@@ -268,7 +268,7 @@ public class UsageevolutionPackageImpl extends EPackageImpl implements Usageevol
 
         initEClass(workParameterEvolutionEClass, WorkParameterEvolution.class, "WorkParameterEvolution", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         initEReference(getWorkParameterEvolution_Evolution(), theDlimPackage.getSequence(), null, "evolution", null, 1, 1, WorkParameterEvolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        initEAttribute(getWorkParameterEvolution_ParameterName(), ecorePackage.getEString(), "parameterName", null, 0, 1, WorkParameterEvolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getWorkParameterEvolution_VariableCharacterisation(), theParameterPackage.getVariableCharacterisation(), null, "variableCharacterisation", null, 1, 1, WorkParameterEvolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         // Create resource
         createResource(eNS_URI);

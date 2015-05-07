@@ -2,6 +2,7 @@
  */
 package org.scaledl.usageevolution;
 
+import de.uka.ipd.sdq.pcm.parameter.VariableCharacterisation;
 import org.eclipse.emf.ecore.EObject;
 
 import tools.descartes.dlim.Sequence;
@@ -14,7 +15,7 @@ import tools.descartes.dlim.Sequence;
  * The following features are supported:
  * <ul>
  *   <li>{@link org.scaledl.usageevolution.WorkParameterEvolution#getEvolution <em>Evolution</em>}</li>
- *   <li>{@link org.scaledl.usageevolution.WorkParameterEvolution#getParameterName <em>Parameter Name</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.WorkParameterEvolution#getVariableCharacterisation <em>Variable Characterisation</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,28 +50,29 @@ public interface WorkParameterEvolution extends EObject {
     void setEvolution(Sequence value);
 
     /**
-     * Returns the value of the '<em><b>Parameter Name</b></em>' attribute.
+     * Returns the value of the '<em><b>Variable Characterisation</b></em>' reference.
      * <!-- begin-user-doc -->
      * <p>
-     * If the meaning of the '<em>Parameter Name</em>' attribute isn't clear, there really should be
-     * more of a description here...
+     * If the meaning of the '<em>Variable Characterisation</em>' reference isn't clear,
+     * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Parameter Name</em>' attribute.
-     * @see #setParameterName(String)
-     * @see org.scaledl.usageevolution.UsageevolutionPackage#getWorkParameterEvolution_ParameterName()
-     * @model
+     * @return the value of the '<em>Variable Characterisation</em>' reference.
+     * @see #setVariableCharacterisation(VariableCharacterisation)
+     * @see org.scaledl.usageevolution.UsageevolutionPackage#getWorkParameterEvolution_VariableCharacterisation()
+     * @model required="true"
      * @generated
      */
-    String getParameterName();
+    VariableCharacterisation getVariableCharacterisation();
 
     /**
-     * Sets the value of the '{@link org.scaledl.usageevolution.WorkParameterEvolution#getParameterName <em>Parameter Name</em>}' attribute.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @param value the new value of the '<em>Parameter Name</em>' attribute.
-     * @see #getParameterName()
+     * Sets the value of the '{@link org.scaledl.usageevolution.WorkParameterEvolution#getVariableCharacterisation <em>Variable Characterisation</em>}' reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @param value the new value of the '<em>Variable Characterisation</em>' reference.
+     * @see #getVariableCharacterisation()
      * @generated
      */
-    void setParameterName(String value);
+    void setVariableCharacterisation(VariableCharacterisation value);
 
 } // WorkParameterEvolution

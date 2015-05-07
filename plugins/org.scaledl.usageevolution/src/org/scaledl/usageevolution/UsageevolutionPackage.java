@@ -3,8 +3,6 @@
 package org.scaledl.usageevolution;
 
 import de.uka.ipd.sdq.pcm.core.entity.EntityPackage;
-
-import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -190,15 +188,15 @@ public interface UsageevolutionPackage extends EPackage {
 	int WORK_PARAMETER_EVOLUTION__EVOLUTION = 0;
 
 	/**
-     * The feature id for the '<em><b>Parameter Name</b></em>' attribute.
+     * The feature id for the '<em><b>Variable Characterisation</b></em>' reference.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-	int WORK_PARAMETER_EVOLUTION__PARAMETER_NAME = 1;
+    int WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION = 1;
 
-	/**
+    /**
      * The number of structural features of the '<em>Work Parameter Evolution</em>' class.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -293,17 +291,17 @@ public interface UsageevolutionPackage extends EPackage {
 	EReference getWorkParameterEvolution_Evolution();
 
 	/**
-     * Returns the meta object for the attribute '{@link org.scaledl.usageevolution.WorkParameterEvolution#getParameterName <em>Parameter Name</em>}'.
+     * Returns the meta object for the reference '{@link org.scaledl.usageevolution.WorkParameterEvolution#getVariableCharacterisation <em>Variable Characterisation</em>}'.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @return the meta object for the attribute '<em>Parameter Name</em>'.
-     * @see org.scaledl.usageevolution.WorkParameterEvolution#getParameterName()
+     * <!-- end-user-doc -->
+     * @return the meta object for the reference '<em>Variable Characterisation</em>'.
+     * @see org.scaledl.usageevolution.WorkParameterEvolution#getVariableCharacterisation()
      * @see #getWorkParameterEvolution()
      * @generated
      */
-	EAttribute getWorkParameterEvolution_ParameterName();
+    EReference getWorkParameterEvolution_VariableCharacterisation();
 
-	/**
+    /**
      * Returns the factory that creates the instances of the model.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -397,12 +395,12 @@ public interface UsageevolutionPackage extends EPackage {
 		EReference WORK_PARAMETER_EVOLUTION__EVOLUTION = eINSTANCE.getWorkParameterEvolution_Evolution();
 
 		/**
-         * The meta object literal for the '<em><b>Parameter Name</b></em>' attribute feature.
+         * The meta object literal for the '<em><b>Variable Characterisation</b></em>' reference feature.
          * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
+         * <!-- end-user-doc -->
          * @generated
          */
-		EAttribute WORK_PARAMETER_EVOLUTION__PARAMETER_NAME = eINSTANCE.getWorkParameterEvolution_ParameterName();
+        EReference WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION = eINSTANCE.getWorkParameterEvolution_VariableCharacterisation();
 
 	}
 
