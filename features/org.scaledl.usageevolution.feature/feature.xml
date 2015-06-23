@@ -256,7 +256,7 @@ limitations under the License.
       <import plugin="de.uka.ipd.sdq.units" version="2.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.edit"/>
       <import plugin="de.uka.ipd.sdq.identifier.edit"/>
-      <import plugin="de.uka.ipd.sdq.pcm.edit"/>
+      <import plugin="org.palladiosimulator.pcm.edit"/>
       <import plugin="de.uka.ipd.sdq.probfunction.edit"/>
       <import plugin="de.uka.ipd.sdq.stoex.edit"/>
       <import plugin="de.uka.ipd.sdq.units.edit"/>
