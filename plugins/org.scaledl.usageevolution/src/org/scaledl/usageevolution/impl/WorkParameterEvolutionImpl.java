@@ -2,7 +2,7 @@
  */
 package org.scaledl.usageevolution.impl;
 
-import de.uka.ipd.sdq.pcm.parameter.VariableCharacterisation;
+import org.palladiosimulator.pcm.parameter.VariableCharacterisation;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;

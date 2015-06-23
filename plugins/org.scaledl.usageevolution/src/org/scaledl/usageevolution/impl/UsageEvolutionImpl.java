@@ -2,7 +2,7 @@
  */
 package org.scaledl.usageevolution.impl;
 
-import de.uka.ipd.sdq.pcm.core.entity.impl.EntityImpl;
+import org.palladiosimulator.pcm.core.entity.impl.EntityImpl;
 
 import java.util.Collection;
 

@@ -2,7 +2,7 @@
  */
 package org.scaledl.usageevolution;
 
-import de.uka.ipd.sdq.pcm.core.entity.EntityPackage;
+import org.palladiosimulator.pcm.core.entity.EntityPackage;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;

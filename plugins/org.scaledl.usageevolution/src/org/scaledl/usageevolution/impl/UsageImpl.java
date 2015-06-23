@@ -18,8 +18,8 @@ import org.scaledl.usageevolution.UsageevolutionPackage;
 import org.scaledl.usageevolution.WorkParameterEvolution;
 
 import tools.descartes.dlim.Sequence;
-import de.uka.ipd.sdq.pcm.core.entity.impl.EntityImpl;
-import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario;
+import org.palladiosimulator.pcm.core.entity.impl.EntityImpl;
+import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '<em><b>Usage</b></em>'. <!--

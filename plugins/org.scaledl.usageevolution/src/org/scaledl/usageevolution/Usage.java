@@ -6,8 +6,8 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 import tools.descartes.dlim.Sequence;
-import de.uka.ipd.sdq.pcm.core.entity.Entity;
-import de.uka.ipd.sdq.pcm.usagemodel.UsageScenario;
+import org.palladiosimulator.pcm.core.entity.Entity;
+import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '<em><b>Usage</b></em>'. <!--

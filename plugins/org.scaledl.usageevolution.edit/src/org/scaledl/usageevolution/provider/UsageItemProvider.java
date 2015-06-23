@@ -3,7 +3,7 @@
 package org.scaledl.usageevolution.provider;
 
 
-import de.uka.ipd.sdq.pcm.core.entity.provider.EntityItemProvider;
+import org.palladiosimulator.pcm.core.entity.provider.EntityItemProvider;
 import java.util.Collection;
 import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;

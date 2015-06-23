@@ -23,9 +23,9 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.scaledl.usageevolution.UsageevolutionPackage;
 import org.scaledl.usageevolution.WorkParameterEvolution;
 
-import de.uka.ipd.sdq.pcm.parameter.VariableCharacterisation;
-import de.uka.ipd.sdq.pcm.parameter.VariableUsage;
-import de.uka.ipd.sdq.pcm.usagemodel.EntryLevelSystemCall;
+import org.palladiosimulator.pcm.parameter.VariableCharacterisation;
+import org.palladiosimulator.pcm.parameter.VariableUsage;
+import org.palladiosimulator.pcm.usagemodel.EntryLevelSystemCall;
 
 /**
  * This is the item provider adapter for a {@link org.scaledl.usageevolution.WorkParameterEvolution} object.

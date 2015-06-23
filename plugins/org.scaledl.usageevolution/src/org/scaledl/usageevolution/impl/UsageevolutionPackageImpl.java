@@ -12,10 +12,10 @@ import org.scaledl.usageevolution.UsageevolutionFactory;
 import org.scaledl.usageevolution.UsageevolutionPackage;
 import org.scaledl.usageevolution.WorkParameterEvolution;
 import tools.descartes.dlim.DlimPackage;
-import de.uka.ipd.sdq.pcm.PcmPackage;
-import de.uka.ipd.sdq.pcm.core.entity.EntityPackage;
-import de.uka.ipd.sdq.pcm.parameter.ParameterPackage;
-import de.uka.ipd.sdq.pcm.usagemodel.UsagemodelPackage;
+import org.palladiosimulator.pcm.PcmPackage;
+import org.palladiosimulator.pcm.core.entity.EntityPackage;
+import org.palladiosimulator.pcm.parameter.ParameterPackage;
+import org.palladiosimulator.pcm.usagemodel.UsagemodelPackage;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!-- end-user-doc -->

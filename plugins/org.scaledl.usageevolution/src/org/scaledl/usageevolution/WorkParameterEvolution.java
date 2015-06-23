@@ -2,7 +2,7 @@
  */
 package org.scaledl.usageevolution;
 
-import de.uka.ipd.sdq.pcm.parameter.VariableCharacterisation;
+import org.palladiosimulator.pcm.parameter.VariableCharacterisation;
 import org.eclipse.emf.ecore.EObject;
 
 import tools.descartes.dlim.Sequence;
