@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="usageevolution" nsURI="http://usageevolution/1.0" nsPrefix="usageevolution">
-  <eClassifiers xsi:type="ecore:EClass" name="UsageEvolution" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.pcm/model/pcm.ecore#//core/entity/Entity">
+  <eClassifiers xsi:type="ecore:EClass" name="UsageEvolution" eSuperTypes="platform:/plugin/org.palladiosimulator.pcm/model/pcm.ecore#//core/entity/Entity">
     <eStructuralFeatures xsi:type="ecore:EReference" name="usages" lowerBound="1"
         upperBound="-1" eType="#//Usage" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Usage" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.pcm/model/pcm.ecore#//core/entity/Entity">
+  <eClassifiers xsi:type="ecore:EClass" name="Usage" eSuperTypes="platform:/plugin/org.palladiosimulator.pcm/model/pcm.ecore#//core/entity/Entity">
     <eStructuralFeatures xsi:type="ecore:EReference" name="loadEvolution" eType="ecore:EClass platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="workEvolutions" upperBound="-1"
         eType="#//WorkParameterEvolution" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="scenario" lowerBound="1"
-        eType="ecore:EClass platform:/plugin/de.uka.ipd.sdq.pcm/model/pcm.ecore#//usagemodel/UsageScenario"/>
+        eType="ecore:EClass platform:/plugin/org.palladiosimulator.pcm/model/pcm.ecore#//usagemodel/UsageScenario"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="WorkParameterEvolution">
     <eStructuralFeatures xsi:type="ecore:EReference" name="evolution" lowerBound="1"
         eType="ecore:EClass platform:/plugin/tools.descartes.dlim.generator/src/tools/descartes/dlim/model/dlim.ecore#//Sequence"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="variableCharacterisation"
-        lowerBound="1" eType="ecore:EClass platform:/plugin/de.uka.ipd.sdq.pcm/model/pcm.ecore#//parameter/VariableCharacterisation"/>
+        lowerBound="1" eType="ecore:EClass platform:/plugin/org.palladiosimulator.pcm/model/pcm.ecore#//parameter/VariableCharacterisation"/>
   </eClassifiers>
 </ecore:EPackage>
