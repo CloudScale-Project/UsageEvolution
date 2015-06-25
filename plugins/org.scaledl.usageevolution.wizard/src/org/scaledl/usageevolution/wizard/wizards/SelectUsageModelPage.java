@@ -6,14 +6,11 @@ import java.util.List;
 import org.eclipse.core.databinding.DataBindingContext;
 import org.eclipse.core.databinding.beans.BeanProperties;
 import org.eclipse.core.databinding.observable.value.IObservableValue;
-import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
 import org.eclipse.emf.common.ui.dialogs.WorkspaceResourceDialog;
 import org.eclipse.jface.databinding.swt.WidgetProperties;
 import org.eclipse.jface.dialogs.IDialogPage;
 import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.jface.viewers.ViewerFilter;
 import org.eclipse.jface.wizard.WizardPage;
 import org.eclipse.swt.SWT;
@@ -33,51 +30,48 @@ import org.eclipse.swt.widgets.Text;
  */
 
 public class SelectUsageModelPage extends WizardPage {
-    private DataBindingContext m_bindingContext;
     private Text usageModelFileNameText;
     private UsageEvolutionSetupModel model;
     private Label lblSelectUsageModel;
 
-    private ISelection selection;
-
     /**
      * Constructor for SampleNewWizardPage.
-     * 
+     *
      * @param pageName
      */
-    public SelectUsageModelPage(ISelection selection) {
+    public SelectUsageModelPage(final ISelection selection) {
         super("wizardPage");
         setTitle("Create Usage Evolution Model (step 2 of 3)");
         setDescription("Select Palladio usage model to create an evolution for\n(leave empty to define this at a later stage)");
-        this.selection = selection;
     }
 
     /**
      * @see IDialogPage#createControl(Composite)
      */
-    public void createControl(Composite parent) {
-        Composite container = new Composite(parent, SWT.NULL);
-        Label label;
+    @Override
+    public void createControl(final Composite parent) {
+        final Composite container = new Composite(parent, SWT.NULL);
         container.setLayout(new GridLayout(2, false));
         lblSelectUsageModel = new Label(container, SWT.NULL);
         lblSelectUsageModel.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
         lblSelectUsageModel.setText("Select usage model");
 
-        Button button = new Button(container, SWT.PUSH);
+        final Button button = new Button(container, SWT.PUSH);
         button.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
         button.setText("Browse...");
         button.addSelectionListener(new SelectionAdapter() {
-            public void widgetSelected(SelectionEvent e) {
+            @Override
+            public void widgetSelected(final SelectionEvent e) {
                 handleBrowse();
             }
         });
 
         usageModelFileNameText = new Text(container, SWT.BORDER | SWT.SINGLE);
-        GridData gd_usageModelFileNameText = new GridData(SWT.LEFT, SWT.CENTER, true, false, 2, 1);
+        final GridData gd_usageModelFileNameText = new GridData(SWT.LEFT, SWT.CENTER, true, false, 2, 1);
         gd_usageModelFileNameText.widthHint = 580;
         usageModelFileNameText.setLayoutData(gd_usageModelFileNameText);
 
-        m_bindingContext = initDataBindings();
+        initDataBindings();
         setControl(container);
     }
 
@@ -88,28 +82,28 @@ public class SelectUsageModelPage extends WizardPage {
 
     private void handleBrowse() {
         // maybe use getContextSelection to open at default location later in 5th parameter
-        List<ViewerFilter> filters = new ArrayList<ViewerFilter>();
+        final List<ViewerFilter> filters = new ArrayList<ViewerFilter>();
         filters.add(new PatternFilter("usagemodel"));
-        
-        IFile[] files = WorkspaceResourceDialog.openFileSelection(getShell(), null, "Select usage model", false, 
+
+        final IFile[] files = WorkspaceResourceDialog.openFileSelection(getShell(), null, "Select usage model", false,
                 null, filters);
 
         if (files.length != 0 && files[0] != null) {
-            String portableString = files[0].getFullPath().toPortableString();
+            final String portableString = files[0].getFullPath().toPortableString();
             model.setUsageModelFileName(portableString);
         }
     }
 
-    public void setModel(UsageEvolutionSetupModel setupModel) {
+    public void setModel(final UsageEvolutionSetupModel setupModel) {
         this.model = setupModel;
 
     }
-    
+
     protected DataBindingContext initDataBindings() {
-        DataBindingContext bindingContext = new DataBindingContext();
+        final DataBindingContext bindingContext = new DataBindingContext();
         //
-        IObservableValue observeTextUsageModelFileNameTextObserveWidget = WidgetProperties.text(SWT.Modify).observe(usageModelFileNameText);
-        IObservableValue usageModelFileNameModelObserveValue = BeanProperties.value("usageModelFileName").observe(model);
+        final IObservableValue observeTextUsageModelFileNameTextObserveWidget = WidgetProperties.text(SWT.Modify).observe(usageModelFileNameText);
+        final IObservableValue usageModelFileNameModelObserveValue = BeanProperties.value("usageModelFileName").observe(model);
         bindingContext.bindValue(observeTextUsageModelFileNameTextObserveWidget, usageModelFileNameModelObserveValue, null, null);
         //
         return bindingContext;

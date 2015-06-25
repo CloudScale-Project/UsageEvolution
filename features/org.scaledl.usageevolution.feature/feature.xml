@@ -250,22 +250,33 @@ limitations under the License.
       <import plugin="org.eclipse.emf.ecore" version="2.10.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.ecore.xmi" version="2.10.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.identifier" version="2.1.0" match="greaterOrEqual"/>
-      <import plugin="de.uka.ipd.sdq.pcm" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.pcm" version="4.0.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.probfunction" version="2.1.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.stoex" version="2.2.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.units" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="tools.descartes.dlim.generator" version="0.14.10" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.edit"/>
       <import plugin="de.uka.ipd.sdq.identifier.edit"/>
       <import plugin="org.palladiosimulator.pcm.edit"/>
       <import plugin="de.uka.ipd.sdq.probfunction.edit"/>
       <import plugin="de.uka.ipd.sdq.stoex.edit"/>
       <import plugin="de.uka.ipd.sdq.units.edit"/>
+      <import plugin="tools.descartes.dlim.generator.edit" version="0.14.10" match="greaterOrEqual"/>
+      <import plugin="tools.descartes.dlim.generator.editor" version="0.14.10" match="greaterOrEqual"/>
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.emf.edit.ui"/>
       <import plugin="org.eclipse.ui.ide"/>
-      <import plugin="tools.descartes.dlim.generator" version="0.14.10" match="greaterOrEqual"/>
-      <import plugin="tools.descartes.dlim.generator.edit" version="0.14.10" match="greaterOrEqual"/>
-      <import plugin="tools.descartes.dlim.generator.editor" version="0.14.10" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.databinding"/>
+      <import plugin="org.eclipse.core.databinding.beans"/>
+      <import plugin="org.eclipse.core.databinding.observable"/>
+      <import plugin="org.eclipse.core.databinding.property"/>
+      <import plugin="org.eclipse.jface.databinding"/>
+      <import plugin="com.ibm.icu"/>
+      <import plugin="org.eclipse.ui.workbench"/>
+      <import plugin="org.eclipse.emf.ecore" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="org.scaledl.usageevolution" version="0.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.common.ui" version="2.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
