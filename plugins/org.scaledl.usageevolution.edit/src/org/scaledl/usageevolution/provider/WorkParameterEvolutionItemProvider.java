@@ -71,14 +71,8 @@ public class WorkParameterEvolutionItemProvider
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        // itemPropertyDescriptors = null; // Force rebuild
-        if (this.itemPropertyDescriptors == null) {
-            this.getPropertyDescriptorsGen(object);
-
-            this.addEvolutionPropertyDescriptor(object);
-            this.addVariableCharacterisationPropertyDescriptor(object);
-
-        }
+        itemPropertyDescriptors = null; // Force rebuild
+        this.getPropertyDescriptorsGen(object);
         return this.itemPropertyDescriptors;
     }
 
@@ -126,10 +120,6 @@ public class WorkParameterEvolutionItemProvider
 
         @Override
         public IItemLabelProvider getLabelProvider(final Object thisObject) {
-            // return new
-            // AdaptedVariableCharacterisationItemProvider(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory());
-            // }
-
             return new IItemLabelProvider() {
 
                 @Override
@@ -166,10 +156,6 @@ public class WorkParameterEvolutionItemProvider
     }
 
     protected void addVariableCharacterisationPropertyDescriptor(final Object object) {
-
-        // IItemLabelProvider test;
-        // test.
-
         this.itemPropertyDescriptors.add(new VariableCharacterisationPropertyDescriptor(
                 ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
                 this.getResourceLocator(),
@@ -187,67 +173,6 @@ public class WorkParameterEvolutionItemProvider
 
     }
 
-    /**
-     * This adds a property descriptor for the Variable Characterisation feature. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @generated NOT
-     */
-
-    /*
-     * protected void addVariableCharacterisationPropertyDescriptor(Object object) {
-     *
-     * //IItemLabelProvider test; //test.
-     *
-     * IItemPropertyDescriptor propDesc = createItemPropertyDescriptor
-     * (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-     * getString("_UI_WorkParameterEvolution_variableCharacterisation_feature"),
-     * getString("_UI_PropertyDescriptor_description",
-     * "_UI_WorkParameterEvolution_variableCharacterisation_feature",
-     * "_UI_WorkParameterEvolution_type"),
-     * UsageevolutionPackage.Literals.WORK_PARAMETER_EVOLUTION__VARIABLE_CHARACTERISATION, true,
-     * false, true, null, null, null);
-     *
-     * if (object instanceof WorkParameterEvolution) { //VariableCharacterisation varChar =
-     * ((WorkParameterEvolution)object).getVariableCharacterisation(); //
-     * itemPropertyDescriptors.add( new ItemPropertyDescriptorDecorator(object, propDesc) {
-     * itemPropertyDescriptors.add( new ItemPropertyDescriptorDecorator2(propDesc) {
-     *
-     * public IItemLabelProvider getOrgLabelProvider(Object thisObject) { return
-     * super.getLabelProvider(thisObject); }
-     *
-     * @Override public IItemLabelProvider getLabelProvider(Object thisObject) { // return new
-     * AdaptedVariableCharacterisationItemProvider
-     * (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory()); // }
-     *
-     *
-     * return new IItemLabelProvider() {
-     *
-     * @Override public String getText(Object object) { if (object instanceof
-     * VariableCharacterisation) { VariableCharacterisation varChar = (VariableCharacterisation)
-     * object; try { VariableUsage usage = varChar.getVariableUsage_VariableCharacterisation();
-     *
-     * String ref = usage.getNamedReference__VariableUsage().getReferenceName(); if
-     * (usage.eContainer() instanceof EntryLevelSystemCall) { EntryLevelSystemCall call =
-     * (EntryLevelSystemCall) usage.eContainer(); ref =
-     * call.getOperationSignature__EntryLevelSystemCall().getEntityName() + "." + ref; ref =
-     * call.getOperationSignature__EntryLevelSystemCall
-     * ().getInterface__OperationSignature().getEntityName() + "." + ref; } return ref + "." +
-     * varChar.getType().getName();// getOrgLabelProvider(object).getText(object); } catch
-     * (Exception e) { return getOrgLabelProvider(object).getText(object); } } return
-     * getOrgLabelProvider(object).getText(object); }
-     *
-     * @Override public Object getImage(Object object) { return
-     * getOrgLabelProvider(object).getImage(object); }
-     *
-     * }; }
-     *
-     * });
-     *
-     * } else { itemPropertyDescriptors.add(propDesc); }
-     *
-     * }
-     */
     /**
      * This returns WorkParameterEvolution.gif. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
