@@ -4,7 +4,7 @@ Bundle-Name: UsageEvolutonWizard
 Bundle-SymbolicName: org.scaledl.usageevolution.wizard;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: org.scaledl.usageevolution.wizard.Activator
-Bundle-Vendor: SINTEF
+Bundle-Vendor: scaledl.org
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.core.resources,
