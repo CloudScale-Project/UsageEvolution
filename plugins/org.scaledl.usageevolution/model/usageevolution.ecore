@@ -11,6 +11,10 @@
         eType="#//WorkParameterEvolution" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="scenario" lowerBound="1"
         eType="ecore:EClass platform:/plugin/org.palladiosimulator.pcm/model/pcm.ecore#//usagemodel/UsageScenario"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="repeatingPattern" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="False"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="evolutionStepWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
+        defaultValueLiteral="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="WorkParameterEvolution">
     <eStructuralFeatures xsi:type="ecore:EReference" name="evolution" lowerBound="1"

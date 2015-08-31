@@ -13,7 +13,7 @@ import org.palladiosimulator.pcm.core.entity.Entity;
  * <p>
  * The following features are supported:
  * <ul>
- * <li>{@link org.scaledl.usageevolution.UsageEvolution#getUsages <em>Usages</em>}</li>
+ *   <li>{@link org.scaledl.usageevolution.UsageEvolution#getUsages <em>Usages</em>}</li>
  * </ul>
  * </p>
  *
@@ -22,20 +22,20 @@ import org.palladiosimulator.pcm.core.entity.Entity;
  * @generated
  */
 public interface UsageEvolution extends EObject, Entity {
-    /**
-     * Returns the value of the '<em><b>Usages</b></em>' containment reference list. The list
-     * contents are of type {@link org.scaledl.usageevolution.Usage}. <!-- begin-user-doc -->
-     * <p>
-     * If the meaning of the '<em>Usages</em>' containment reference list isn't clear, there really
-     * should be more of a description here...
-     * </p>
-     * <!-- end-user-doc -->
-     *
-     * @return the value of the '<em>Usages</em>' containment reference list.
-     * @see org.scaledl.usageevolution.UsageevolutionPackage#getUsageEvolution_Usages()
-     * @model containment="true" required="true"
-     * @generated
-     */
-    EList<Usage> getUsages();
+	/**
+	 * Returns the value of the '<em><b>Usages</b></em>' containment reference list.
+	 * The list contents are of type {@link org.scaledl.usageevolution.Usage}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Usages</em>' containment reference list isn't clear, there really
+	 * should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Usages</em>' containment reference list.
+	 * @see org.scaledl.usageevolution.UsageevolutionPackage#getUsageEvolution_Usages()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	EList<Usage> getUsages();
 
 } // UsageEvolution
