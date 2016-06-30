@@ -6,7 +6,7 @@
   <rm:locator searchPathRef="CloudScale-Features" failOnError="false"/>
   <rm:locator searchPathRef="Limbo" failOnError="false" />
 
-  <rm:redirect pattern=".*" href="https://raw.githubusercontent.com/PalladioSimulator/Palladio-Core-Editors/master/features/org.palladiosimulator.editors.buckminster/editors.rmap"/>
+  <rm:redirect pattern=".*" href="https://raw.githubusercontent.com/PalladioSimulator/Palladio-Core-Editors/master/org.palladiosimulator.editors.buckminster/editors.rmap"/>
 
   <rm:searchPath name="CloudScale-Features">
     <rm:provider componentTypes="eclipse.feature,osgi.bundle" readerType="svn">
