@@ -20,7 +20,7 @@
 	<repository><id>Luna</id><layout>p2</layout><url>http://download.eclipse.org/releases/neon</url></repository>
 
 	<repository><id>PCM Core PCM</id><layout>p2</layout><url>http://sdqweb.ipd.kit.edu/eclipse/palladio/core/pcm/nightly</url></repository>
-	<repository><id>PCM Core Editors</id><layout>p2</layout><url>https://sdqweb.ipd.kit.edu/eclipse/palladio/core/editors/commons/nightly/</url></repository>
+	<repository><id>PCM Core Editors</id><layout>p2</layout><url>https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/commons/nightly/</url></repository>
 	<repository><id>Palladio Commons - Buckminster Build</id><layout>p2</layout><url>http://sdqweb.ipd.kit.edu/eclipse/commons/nightly/</url></repository>
 	<repository><id>Limbo Update</id><layout>p2</layout><url>http://se2.informatik.uni-wuerzburg.de/eclipse/limbo/</url></repository>
 </repositories>
