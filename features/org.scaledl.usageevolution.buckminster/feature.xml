@@ -251,7 +251,7 @@ limitations under the License.
    </license>
 
    <url>
-      <discovery label="Limbo" url="http://se2.informatik.uni-wuerzburg.de/eclipse/limbo/"/>
+      <discovery label="Limbo" url="https://se2.informatik.uni-wuerzburg.de/eclipse/limbo/"/>
       <discovery label="Eclipse Luna" url="http://download.eclipse.org/releases/luna/"/>
       <discovery label="Palladio Commons" url="https://sdqweb.ipd.kit.edu/eclipse/commons/nightly/"/>
       <discovery label="Palladio Third Party Wrapper" url="https://sdqweb.ipd.kit.edu/eclipse/thirdpartywrapper/nightly/"/>
