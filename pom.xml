@@ -1,77 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.scaledl.usageevolution</groupId>
-  <artifactId>usageevolution</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <modules>
-    <module>plugins/org.scaledl.usageevolution</module>
-    <module>plugins/org.scaledl.usageevolution.edit</module>
-    <module>plugins/org.scaledl.usageevolution.editor</module>
-    <module>plugins/org.scaledl.usageevolution.wizard</module>
-    <module>features/org.scaledl.usageevolution.feature</module>
-    <module>features/org.scaledl.usageevolution.updatesite</module>
-  </modules>
 
-<!-- FIX - ALL UPDATESITES NOT NEEDED -->
-<repositories>
-	<repository><id>Neon</id><layout>p2</layout><url>http://download.eclipse.org/releases/neon</url></repository>
-	<repository><id>PCM Core PCM</id><layout>p2</layout><url>https://sdqweb.ipd.kit.edu/eclipse/palladio/pcm/releases/latest/</url></repository>
-	<repository><id>PCM Core Editors</id><layout>p2</layout><url>https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/commons/releases/latest/</url></repository>
-	<repository><id>Palladio Commons - Buckminster Build</id><layout>p2</layout><url>https://sdqweb.ipd.kit.edu/eclipse/commons/releases/latest/</url></repository>
-	<repository><id>Limbo Update</id><layout>p2</layout><url>https://se2.informatik.uni-wuerzburg.de/eclipse/limbo/</url></repository>
-</repositories>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.palladiosimulator</groupId>
+		<artifactId>eclipse-parent-updatesite</artifactId>
+		<version>0.3.2</version>
+	</parent>
+	<groupId>org.scaledl.usageevolution</groupId>
+	<artifactId>usageevolution</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<properties>
+		<org.palladiosimulator.maven.tychotprefresh.tplocation.2>${project.basedir}/releng/org.scaledl.usageevolution.targetplatform/tp.target</org.palladiosimulator.maven.tychotprefresh.tplocation.2>
+	</properties>
+	
+	<modules>
+		<module>bundles</module>
+		<module>features</module>
+		<module>releng</module>
+	</modules>
 
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.eclipse.tycho</groupId>
-        <artifactId>tycho-maven-plugin</artifactId>
-        <version>0.21.0</version>
-        <extensions>true</extensions>
-      </plugin>
-	<plugin>
-		  <groupId>org.eclipse.tycho</groupId>
-		  <artifactId>tycho-versions-plugin</artifactId>
-		  <version>0.21.0</version>
-	</plugin>
-<plugin>
-			<groupId>org.eclipse.tycho</groupId>
-			<artifactId>target-platform-configuration</artifactId>
-			<version>0.21.0</version>
-			<configuration>
-				<environments>
-					<environment>
-						<os>linux</os>
-						<ws>gtk</ws>
-						<arch>x86_64</arch>
-					</environment>
-					<environment>
-						<os>linux</os>
-						<ws>gtk</ws>
-						<arch>x86</arch>
-					</environment>
-					<environment>
-						<os>macosx</os>
-						<ws>cocoa</ws>
-						<arch>x86_64</arch>
-					</environment>
-					<environment>
-						<os>win32</os>
-						<ws>win32</ws>
-						<arch>x86</arch>
-					</environment>
-					<environment>
-						<os>win32</os>
-						<ws>win32</ws>
-						<arch>x86_64</arch>
-					</environment>
-				</environments>
-			</configuration>
-		</plugin>
-    </plugins>
-  </build>
 </project>
